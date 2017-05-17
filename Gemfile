@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '~> 3.2.22'
+gem 'rails', '~> 4.2.0'
 gem 'bootstrap-sass', '2.1'
 gem 'carrierwave'
 gem 'geocoder'
@@ -8,11 +8,15 @@ gem 'gmaps4rails'
 gem 'nested_form'
 gem "country-select"
 
-gem 'activeadmin', "~> 0.6"
+gem 'activeadmin'
+gem 'rails-observers'
+gem 'protected_attributes'
+gem 'devise'
+
 
 gem "rmagick", "~> 2.13.1"
 gem "paperclip", "~> 2.7"
-gem "date-input-rails"
+#gem "date-input-rails"
 
 gem 'chosen-rails'
 
@@ -27,15 +31,16 @@ gem "net-ldap"
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'jquery-rails', '2.2.1'
+gem 'jquery-rails', '4.2.0'
 
 
 # Gems used only for assets and not required
 # in production environments by default.
-group :assets do
   gem 'jquery-ui-rails'
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
+  gem 'sass-rails'
+      # '~> 4.2.0'
+  gem 'coffee-rails'
+#, '~> 3.2.1'
   gem 'font-awesome-sass-rails'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
@@ -46,7 +51,6 @@ group :assets do
   #gem "therubyracer"
   #gem "less-rails"
   #gem 'twitter-bootstrap-rails'
-end
 
 gem 'factory_girl_rails'
 

@@ -7,7 +7,7 @@ if Rails.env.development?
   else
     logger = Logger.new('logger.txt')
   end
-  Rails.application.assets.logger = logger
+  Rails.logger = logger
 
   Rails::Rack::Logger.class_eval do
     def call_with_quiet_assets(env)
