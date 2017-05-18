@@ -4,7 +4,7 @@ gem 'rails', '~> 4.2.0'
 gem 'bootstrap-sass', '2.1'
 gem 'carrierwave'
 gem 'geocoder'
-gem 'gmaps4rails'
+gem 'gmaps4rails' 
 gem 'nested_form'
 gem "country-select"
 
@@ -31,12 +31,14 @@ gem "net-ldap"
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'jquery-rails', '4.2.0'
+gem 'jquery-rails'
+#, '4.2.0'
 
 
 # Gems used only for assets and not required
 # in production environments by default.
   gem 'jquery-ui-rails'
+
   gem 'sass-rails'
       # '~> 4.2.0'
   gem 'coffee-rails'

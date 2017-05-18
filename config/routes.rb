@@ -74,5 +74,5 @@ ImiMaps::Application.routes.draw do
   #match 'en', to: redirect("/en/sessions#new")
   #match 'id', to: redirect("/id/sessions#new")
 
-  match "*path", to: "errors#not_found"
+  #match "*path", to: "errors#not_found"
 end

@@ -1,3 +1,4 @@
+
 class Company < ActiveRecord::Base
   attr_accessible :street, :city, :country, :zip, :main_language, :industry, :name, :number_employees, :website, :phone, :blacklisted, :fax, :import_id, :latitude, :longitude
 
@@ -15,6 +16,7 @@ class Company < ActiveRecord::Base
   # TBD: geocoding should only happen if necessary, see
   # https://github.com/alexreisner/geocoder#avoiding-unnecessary-api-requests
   after_validation :geocode
+
   #acts_as_gmappable :process_geocoding => false
 
   #associations
